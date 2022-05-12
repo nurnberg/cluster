@@ -30,8 +30,11 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.97.208.19
   environments:
   - key: dev
+    owner: nurnberg
+    repository: cluster
   - key: staging
   - key: production
   ingress:
@@ -42,6 +45,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: nurnberg
   repository: bucketrepo
   secretStorage: local
   vault: {}
